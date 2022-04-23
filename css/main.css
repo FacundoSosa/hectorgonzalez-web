@@ -1,0 +1,629 @@
+body{
+    background-color: #F8F1F1;
+    font-family: 'PT Sans', sans-serif;
+
+    margin: 0;
+    padding: 0;
+}
+
+.main-wrapper{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+
+    grid-row-gap: 80px;
+}
+
+
+/* estilos generales */
+
+p{
+    display: inline-block;
+}
+
+.bordes{
+    border-radius: 15px;
+}
+
+.img-portada{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    padding: 15px;
+}
+
+.button{
+    background-color: #16C79A;
+    color: #F8F1F1;
+
+    margin: 8px;
+    padding: 8px;
+}
+
+
+
+/* header */
+
+
+
+header{
+    background-color: #F8F1F1;
+    color: #19456B;
+    border: solid;
+    border-top: 2px;
+    border-bottom: 2px;
+    border-left: 0px;
+    border-right: 0px;
+
+    position: sticky;
+    top: 0%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+
+nav ul{
+    list-style-type: none;
+
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.titulos-header{
+    background-color: #16C79A;
+    color: #F8F1F1;
+
+    font-size: 20px;
+    font-style: italic;
+
+    margin-bottom: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* main */
+
+
+.main{
+    display: grid;
+    grid-row-gap: 80px;
+}
+
+.img-size{
+    width: 420px;
+    height: 200px;
+}
+
+
+
+#seccion-1-home{
+    background-color: #19456B;
+
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.info-1{
+    background-color: #16C79A;
+    color: #F8F1F1;
+    
+    width: 310px;
+    height: 130px;
+
+    margin: 50px;
+    padding: 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-index{
+    margin-bottom: 50px;
+}
+
+.titulos-index-1{
+    font-size: 20px;
+}
+
+.textos-index-1{
+    font-size: 20px;
+    color: #F8F1F1;
+}
+
+
+
+#seccion-2-home{
+    background-color: #19456B;
+    color: #F8F1F1;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.info-2{
+    background-color: #16C79A;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 280px;
+
+}
+
+.titulos-index-2{
+    font-size: 30px;
+    margin-bottom: 0%;
+}
+
+.textos-index-2{
+    font-style: italic;
+    font-size: 18px;
+
+    margin: 10px;
+
+}
+
+
+
+#servicios{
+    background-color: #19456B;
+    color: #F8F1F1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.servicios-tabla{
+    background-color: #11698E;
+    
+}
+
+table{
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    
+}
+
+td{
+    padding: 0px 5px;
+}
+
+
+
+
+.section-blog{
+    background-color: #19456B;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.articulos{
+    background-color: #11698E;
+    color: #F8F1F1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 420px;
+    margin: 10px
+    
+}
+
+.articulos-img-size{
+    width: 420px;
+    min-height: 200px;
+
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.articulos-titulo{
+    font-size: 30px;
+
+    margin: 10px;
+}
+
+.articulos-textos{
+    margin: 10px;
+
+    font-style: italic;
+}
+
+
+
+
+.section-productos{
+    background-color: #19456B;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.productos-portadas{
+    background-color: #11698E;
+    color: #F8F1F1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 10px;
+
+}
+
+.productos-img{
+    height: 220px;
+    width: 220px;
+
+    margin: 10px;
+}
+
+.productos-titulos{
+    margin: 10px;
+}
+
+.productos-textos{
+    margin: 10px;
+}
+
+
+
+.section-cursos{
+    background-color: #19456B;
+
+    margin: 20px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.cursos-portada{
+    background-color: #11698E;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 20px;
+}
+
+.cursos-texto-y-titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cursos-titulos{
+    color: #F8F1F1;
+
+    font-size: 22px;
+
+    margin: 0;
+}
+
+.cursos-textos{
+    color: #F8F1F1;
+
+    font-size: 11px;
+
+    margin: 20px;
+}
+
+.img-cursos{
+    
+    width: 280px;
+    height: 100px;
+
+    margin: 10px;
+
+}
+
+
+
+/*footer  */
+
+
+
+footer{
+    background-color: #16C79A;
+    color: #F8F1F1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.textos-footer{
+    font-size: 20px;
+    font-weight: lighter;
+
+    color: #F8F1F1;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;  
+}
+
+.form-estilo{
+    border-radius: 5px;
+    background-color: #F8F1F1;
+}
+
+
+
+
+/* media quieries */
+
+
+
+
+@media screen and (min-width: 480px){
+
+    .cursos-titulos{
+        font-size: 25px;
+    }
+    
+    .cursos-textos{
+        font-size: 13px;
+    }
+    
+    .img-cursos{  
+        width: 330px;
+        height: 130px;
+    }
+
+}
+
+
+@media screen and (min-width: 600px) {
+
+    .img-size{
+        width: 580px;
+        height: 290px;
+    }
+
+    .info-1{  
+        width: 420px;
+        height: 200px;
+    }
+
+    .titulos-index-1{
+        font-size: 30px;
+    }
+    
+    .textos-index-1{
+        font-size: 30px;
+    }
+
+    footer{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+}
+
+
+
+
+@media screen and (min-width: 710px) {
+    
+    header{
+        
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    nav{
+        display: flex;
+        align-items: center;
+        
+        margin-right: 20px;
+    }
+
+    .titulos-header{
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }  
+
+
+
+    .section-productos{
+        flex-direction: row;
+    }
+
+}
+
+
+
+@media screen and (min-width: 821px){
+
+    .img-size{
+        width: 840px;
+        height: 400px;
+    }
+
+    .img-index{
+        margin-bottom: 0%;
+    }
+
+    
+
+    #seccion-1-home{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .info-1{
+        padding: 50px;
+    }
+
+
+
+    #seccion-2-home{
+
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .info-2{
+        width: 300px;
+        margin-left: 50px;
+    }
+
+
+
+    .servicios-tabla{
+    
+        display: grid;
+        grid-template-rows: 100px 100px;
+        grid-template-columns: 400px 400px;
+
+    }
+
+
+
+    .section-blog{
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+
+}
+
+
+
+
+@media screen and (min-width: 1024px) {
+    
+    .servicios-tabla {
+        display: grid;
+        grid-template-columns: 400px 400px 400px;
+        grid-template-rows: 100px 100px 100px;
+    }
+
+
+
+    .cursos-portada{
+    
+        display: flex;
+        flex-direction: row;
+    
+        margin: 20px;
+    }
+
+    .img-cursos{
+        width: 360px;
+        height: 160px;
+    }
+
+    .cursos-titulos{
+        font-size: 30px;
+    }
+    
+}
+
+
+
+@media screen and (min-width: 1200px) {
+
+    .img-cursos{
+    
+        width: 420px;
+        height: 200px;
+    
+        margin: 10px;
+    
+    }
+
+    .cursos-titulos{
+        font-size: 40px;
+    }
+
+    .cursos-textos{
+        font-size: 15px;
+    }
+    
+}
+
+
+
+@media screen and (min-width: 1373px) {
+
+    .cursos-titulos{
+        font-size: 50px;
+    
+        margin: 0;
+    }
+
+    .cursos-textos{
+        font-size: 17px; 
+    }
+    
+}
+
+
