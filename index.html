@@ -12,7 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
 
     <title>Héctor González | Home</title>
 
@@ -24,18 +25,18 @@
 
         <header>
 
-            <h3 class="titulos-header bordes">HOME</h3>
+            <h3 class="titulos-header bordes animate__animated animate__bounce">HOME</h3>
 
-            <h1><a href="">Héctor González</a></h1>
+            <h1 class="titulo-principal"><a href="">Héctor González</a></h1>
 
             <nav>
                 
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="pages/servicios.html">Servicios</a></li>
-                    <li><a href="pages/cursos.html">Cursos</a></li>
-                    <li><a href="pages/blog.html">Blog</a></li>
-                    <li><a href="pages/tienda.html">Tienda</a></li>
+                    <li><a class="links" href="">Home</a></li>
+                    <li><a class="links" href="pages/servicios.html">Servicios</a></li>
+                    <li><a class="links" href="pages/cursos.html">Cursos</a></li>
+                    <li><a class="links" href="pages/blog.html">Blog</a></li>
+                    <li><a class="links" href="pages/tienda.html">Tienda</a></li>
                 </ul>
 
             </nav>
@@ -43,11 +44,33 @@
         </header>
 
 
-        <main>
+        <main class="main">
 
+            <section id="seccion-1-home">
 
+            <div>
+                <img class="img-size bordes" src="img/portada-canilla.jpg" alt="canilla">
+            </div>
 
-            
+                <div class="info-1 bordes">
+                    <h3 class="titulos-index-1">¿Necesitas un sanitario profesional?</h3>
+                    <a href="#footer" class="textos-index-1"><p class="textos-index">No dudes en contactarte</p></a>
+                </div> 
+
+            </section>
+
+            <section id="seccion-2-home">
+
+                <div class="img-index">
+                    <img class="img-size bordes img-servicios"  src="img/sanitario.jpg" alt="sanitario">
+                </div>
+
+                <div class="info-2 bordes">
+                    <h4 class="titulos-index-2">Sobre mí</h4>
+                    <p class="textos-index-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus officia ratione odit, facere cum quam voluptatem eos quasi dolore hic molestiae dolor quo doloremque a odio, officiis autem sit culpa.</p>
+                </div>
+
+            </section>
 
         </main>
 
@@ -82,8 +105,8 @@
                             <textarea class="form-estilo" name="comentario" id="" cols="30" rows="10"></textarea>
                         </div>
         
-                        <div class="boton">
-                            <input type="submit" value="Enviar">
+                        <div>
+                            <input class="button bordes" type="submit" value="Enviar">
                         </div>
         
                     </form>

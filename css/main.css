@@ -1,5 +1,5 @@
 body{
-    background-color: #ffffff;
+    background-color: #F8F1F1;
     font-family: 'PT Sans', sans-serif;
 
     margin: 0;
@@ -43,6 +43,8 @@ section{
 
     margin: 8px;
     padding: 8px;
+
+    transition: all .3s ease-in-out;
 }
 
 
@@ -51,8 +53,9 @@ section{
 
 
 
+
 header{
-    background-color: #ffffff;
+    background-color: #F8F1F1;
     color: #19456B;
     border: solid;
     border-top: 2px;
@@ -90,9 +93,14 @@ nav ul li{
 
 a{
     text-decoration: none;
+
+    transition: all .3s ease-in-out ;
+   
 }
 
+
 .titulos-header{
+
     background-color: #16C79A;
     color: #F8F1F1;
 
@@ -106,11 +114,20 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+
+    animation-name: bounce;
+    animation-timing-function: ease-in-out;
+
+}
+
+.titulo-principal{
+    transition: all .3s ease-in-out;
 }
 
 
 
 /* main */
+
 
 
 .main{
@@ -125,7 +142,86 @@ a{
 
 
 
+#seccion-1-home{
+    background-color: #19456B;
 
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.info-1{
+    background-color: #16C79A;
+    color: #F8F1F1;
+    
+    width: 310px;
+    height: 130px;
+
+    margin: 50px;
+    padding: 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-index{
+    margin-bottom: 50px;
+}
+
+.titulos-index-1{
+    font-size: 20px;
+}
+
+.textos-index{
+    transition: all .3s ease-in-out;
+}
+
+.textos-index-1{
+    font-size: 20px;
+    color: #F8F1F1;
+
+}
+
+
+
+
+#seccion-2-home{
+    background-color: #19456B;
+    color: #F8F1F1;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.info-2{
+    background-color: #16C79A;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 280px;
+
+}
+
+.titulos-index-2{
+    font-size: 30px;
+    margin-bottom: 0%;
+}
+
+.textos-index-2{
+    font-style: italic;
+    font-size: 18px;
+
+    margin: 10px;
+
+}
 
 
 
@@ -173,6 +269,8 @@ td{
 .articulos{
     background-color: #11698E;
     color: #F8F1F1;
+
+    transition: all .3s ease-in-out;
 
     display: flex;
     flex-direction: column;
@@ -226,6 +324,8 @@ td{
 
     margin: 10px;
 
+    transition: all .3s ease-in-out;
+
 }
 
 .productos-img{
@@ -258,6 +358,8 @@ td{
 .cursos-portada{
     background-color: #11698E;
 
+    transition: all .3s ease-in-out;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -275,6 +377,8 @@ td{
 
 .cursos-titulos{
     color: #F8F1F1;
+
+    transition: all .3s ease-in-out;
 
     font-size: 22px;
 
@@ -305,8 +409,8 @@ td{
 
 
 footer{
-    background-color: #16C79A;
-    color: #F8F1F1;
+    background-color: #F8F1F1;
+    color: #11698E;
 
     display: flex;
     flex-direction: column;
@@ -325,7 +429,10 @@ footer ul{
     font-weight: lighter;
 
     color: #F8F1F1;
+
+    transition: all .3s ease-in-out ;
 }
+
 
 .form{
     display: flex;
@@ -552,5 +659,65 @@ footer ul{
     }
     
 }
+
+
+
+/* hovers */
+
+
+
+.titulo-principal:hover{
+    font-size: 35px;
+}
+
+
+
+a:hover{
+    text-decoration: underline;  
+}
+
+.links:hover{
+    font-size: large ;
+    color: #19456B;
+}
+
+
+
+.textos-index-1:hover {
+    color: #19456B;
+}
+
+
+
+.articulos:hover{
+    background-color: #0c6186;
+}
+
+
+
+.productos-portadas:hover{
+    background-color: #0c6186;
+}
+
+.cursos-portada:hover{
+    background-color: #0c6186;
+}
+
+.cursos-titulos:hover{
+    text-decoration: none;
+    color: #19456B;
+}
+
+.button:hover {
+   color: #19456B;
+   background-color: #F8F1F1;
+
+   border: #19456B;
+
+  text-decoration: none;
+
+ 
+}
+
 
 
