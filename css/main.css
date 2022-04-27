@@ -43,6 +43,8 @@ section{
 
     margin: 8px;
     padding: 8px;
+
+    transition: all .3s ease-in-out;
 }
 
 
@@ -113,6 +115,9 @@ a{
     justify-content: center;
     align-items: center;
 
+    animation-name: bounce;
+    animation-timing-function: ease-in-out;
+
 }
 
 .titulo-principal{
@@ -167,6 +172,10 @@ a{
 
 .titulos-index-1{
     font-size: 20px;
+}
+
+.textos-index{
+    transition: all .3s ease-in-out;
 }
 
 .textos-index-1{
@@ -261,6 +270,8 @@ td{
     background-color: #11698E;
     color: #F8F1F1;
 
+    transition: all .3s ease-in-out;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -313,6 +324,8 @@ td{
 
     margin: 10px;
 
+    transition: all .3s ease-in-out;
+
 }
 
 .productos-img{
@@ -345,6 +358,8 @@ td{
 .cursos-portada{
     background-color: #11698E;
 
+    transition: all .3s ease-in-out;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -362,6 +377,8 @@ td{
 
 .cursos-titulos{
     color: #F8F1F1;
+
+    transition: all .3s ease-in-out;
 
     font-size: 22px;
 
@@ -649,9 +666,11 @@ footer ul{
 
 
 
-.titulo-principal :hover{
+.titulo-principal:hover{
     font-size: 35px;
 }
+
+
 
 a:hover{
     text-decoration: underline;  
@@ -662,8 +681,51 @@ a:hover{
     color: #19456B;
 }
 
-.textos-footer :hover{
+
+
+.textos-index-1:hover {
+    color: #19456B;
+}
+
+
+
+.articulos:hover{
+    background-color: #0c6186;
+}
+
+
+
+.productos-portadas:hover{
+    background-color: #0c6186;
+}
+
+
+
+.cursos-portada:hover{
+    background-color: #0c6186;
+}
+
+.cursos-titulos:hover{
+    text-decoration: none;
+    color: #19456B;
+}
+
+
+
+.textos-footer:hover{
     font-size: 22px;
+}
+
+
+.button:hover {
+   color: #19456B;
+   background-color: #F8F1F1;
+
+   border: #19456B;
+
+  text-decoration: none;
+
+ 
 }
 
 
