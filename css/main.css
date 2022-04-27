@@ -51,6 +51,7 @@ section{
 
 
 
+
 header{
     background-color: #F8F1F1;
     color: #19456B;
@@ -90,9 +91,23 @@ nav ul li{
 
 a{
     text-decoration: none;
+
+    transition: all .3s ease-in-out ;
+    
+   
+}
+
+a:hover{
+    text-decoration: underline;  
+}
+
+.links:hover{
+    font-size: large ;
+    color: #19456B;
 }
 
 .titulos-header{
+
     background-color: #16C79A;
     color: #F8F1F1;
 
@@ -106,11 +121,22 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+
+}
+
+.titulo-principal{
+    transition: all .3s ease-in-out;
+}
+
+.titulo-principal :hover{
+    font-size: 35px;
 }
 
 
 
+
 /* main */
+
 
 
 .main{
@@ -160,7 +186,9 @@ a{
 .textos-index-1{
     font-size: 20px;
     color: #F8F1F1;
+
 }
+
 
 
 
@@ -398,6 +426,12 @@ footer ul{
     font-weight: lighter;
 
     color: #F8F1F1;
+
+    transition: all .3s ease-in-out ;
+}
+
+.textos-footer :hover{
+    font-size: 22px;
 }
 
 .form{
