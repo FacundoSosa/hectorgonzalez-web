@@ -93,18 +93,9 @@ a{
     text-decoration: none;
 
     transition: all .3s ease-in-out ;
-    
    
 }
 
-a:hover{
-    text-decoration: underline;  
-}
-
-.links:hover{
-    font-size: large ;
-    color: #19456B;
-}
 
 .titulos-header{
 
@@ -127,11 +118,6 @@ a:hover{
 .titulo-principal{
     transition: all .3s ease-in-out;
 }
-
-.titulo-principal :hover{
-    font-size: 35px;
-}
-
 
 
 
@@ -430,9 +416,6 @@ footer ul{
     transition: all .3s ease-in-out ;
 }
 
-.textos-footer :hover{
-    font-size: 22px;
-}
 
 .form{
     display: flex;
@@ -659,5 +642,29 @@ footer ul{
     }
     
 }
+
+
+
+/* hovers */
+
+
+
+.titulo-principal :hover{
+    font-size: 35px;
+}
+
+a:hover{
+    text-decoration: underline;  
+}
+
+.links:hover{
+    font-size: large ;
+    color: #19456B;
+}
+
+.textos-footer :hover{
+    font-size: 22px;
+}
+
 
 
