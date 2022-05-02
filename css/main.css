@@ -24,7 +24,7 @@ p{
 }
 
 .bordes{
-    border-radius: 15px;
+    border-radius: 8px;
 }
 
 .img-portada{
@@ -51,9 +51,6 @@ section{
 
 /* header */
 
-
-
-
 header{
     background-color: #F8F1F1;
     color: #19456B;
@@ -63,21 +60,18 @@ header{
     border-left: 0px;
     border-right: 0px;
 
-    position: sticky;
-    top: 0%;
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-nav{
+.navegador{
     display: flex;
     align-items: center;
 }
 
-nav ul{
+.navegador-lista{
     list-style-type: none;
 
     display: flex;
@@ -85,18 +79,17 @@ nav ul{
     padding: 0;
 }
 
-nav ul li{
+.navegador-links{
+    text-decoration: none;
+
+    transition: all .3s ease-in-out ;
 
     margin-right: 5px;
     margin-left: 5px;
 }
 
-a{
-    text-decoration: none;
+ 
 
-    transition: all .3s ease-in-out ;
-   
-}
 
 
 .titulos-header{
@@ -143,11 +136,15 @@ a{
 
 
 #seccion-1-home{
-    background-color: #19456B;
+    background: url(../img/portada-canilla.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+    justify-content: flex-end;
 }
 
 .info-1{
@@ -166,9 +163,28 @@ a{
     align-items: center;
 }
 
+.call-to-action{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.call-to-action-input{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
 .img-index{
     margin-bottom: 50px;
 }
+
+.img-index-icon{
+    width: 64px;
+    height: 56px;
+    
+}
+
 
 .titulos-index-1{
     font-size: 20px;
@@ -185,9 +201,7 @@ a{
 }
 
 
-
-
-#seccion-2-home{
+#seccion-3-home{
     background-color: #19456B;
     color: #F8F1F1;
     
@@ -197,8 +211,8 @@ a{
     align-items: center;
     
 }
-
-.info-2{
+ 
+.info-3{
     background-color: #16C79A;
 
     display: flex;
@@ -208,20 +222,20 @@ a{
 
     width: 280px;
 
-}
+} 
 
-.titulos-index-2{
+.titulos-index-3{
     font-size: 30px;
     margin-bottom: 0%;
 }
 
-.textos-index-2{
+.textos-index-3{
     font-style: italic;
     font-size: 18px;
 
     margin: 10px;
 
-}
+} 
 
 
 
@@ -554,7 +568,7 @@ footer ul{
 
 
 
-    #seccion-2-home{
+    #seccion-3-home{
 
         flex-direction: row-reverse;
         justify-content: space-between;
@@ -562,10 +576,10 @@ footer ul{
 
     }
 
-    .info-2{
+     .info-3{
         width: 300px;
         margin-left: 50px;
-    }
+    } 
 
 
 
@@ -672,11 +686,7 @@ footer ul{
 
 
 
-a:hover{
-    text-decoration: underline;  
-}
-
-.links:hover{
+.navegador-links:hover{
     font-size: large ;
     color: #19456B;
 }

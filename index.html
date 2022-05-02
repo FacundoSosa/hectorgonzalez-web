@@ -7,6 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Bootstrap -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Mis estilos css -->
+
     <link rel="stylesheet" href="../hectorgonzalez-web/css/main.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,21 +31,47 @@
 
         <header>
 
-            <h3 class="titulos-header bordes animate__animated animate__bounce">HOME</h3>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light w-100 m-0">
 
-            <h1 class="titulo-principal"><a href="">Héctor González</a></h1>
+                <div class="container-fluid">
+                  
+                  <div>
 
-            <nav>
+                    <a class="navbar-brand" href="#"><img src="img/planet-earth.png" alt="logo.png"></a>
+
+                    <a class="navbar-brand" href="#">Héctor González</a>
+
+                  </div>
+
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                  <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav mb-2 mb-lg-0 d-flex me-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="pages/servicios.html">Servicios</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="pages/cursos.html">Cursos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="pages/blog.html">Blog</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="pages/tienda.html">Tienda</a>
+                      </li>
+                    </ul>
+
+                  </div>
+
+                </div>
                 
-                <ul>
-                    <li><a class="links" href="">Home</a></li>
-                    <li><a class="links" href="pages/servicios.html">Servicios</a></li>
-                    <li><a class="links" href="pages/cursos.html">Cursos</a></li>
-                    <li><a class="links" href="pages/blog.html">Blog</a></li>
-                    <li><a class="links" href="pages/tienda.html">Tienda</a></li>
-                </ul>
-
-            </nav>
+              </nav>
 
         </header>
 
@@ -48,27 +80,72 @@
 
             <section id="seccion-1-home">
 
-            <div>
-                <img class="img-size bordes" src="img/portada-canilla.jpg" alt="canilla">
-            </div>
 
+              <div class="call-to-action">
                 <div class="info-1 bordes">
                     <h3 class="titulos-index-1">¿Necesitas un sanitario profesional?</h3>
                     <a href="#footer" class="textos-index-1"><p class="textos-index">No dudes en contactarte</p></a>
-                </div> 
+                </div>
 
+                <form action="" class="call-to-action-input">
+                  <textarea name="" id="" cols="30" rows="1" placeholder="Déjame tu consulta"></textarea>
+                  <button type="button" class="btn btn-primary">Enviar por Whatsapp</button>
+                </form>
+              </div>
+                
             </section>
 
             <section id="seccion-2-home">
 
-                <div class="img-index">
-                    <img class="img-size bordes img-servicios"  src="img/sanitario.jpg" alt="sanitario">
+              <div class="container">
+
+                <div class="row">
+
+                  <div class="col">
+                    <div class="card" style="width: 18rem;">
+                      <img src="img/banner1.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <p class="card-text">Reparaciones</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="card" style="width: 18rem;">
+                      <img src="img/banner-2 (1).jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <p class="card-text">Instalaciones</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="card" style="width: 18rem;">
+                      <img src="img/banner3.jpg" class="card-img-top h-" alt="...">
+                      <div class="card-body">
+                        <p class="card-text">Limpieza.</p>
+                      </div>
+                    </div>
+                  </div>
+
                 </div>
 
-                <div class="info-2 bordes">
-                    <h4 class="titulos-index-2">Sobre mí</h4>
-                    <p class="textos-index-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus officia ratione odit, facere cum quam voluptatem eos quasi dolore hic molestiae dolor quo doloremque a odio, officiis autem sit culpa.</p>
+              </div>
+
+                
+
+            </section>
+
+            <section id="seccion-3-home">
+
+                <div class="img-index">
+                  <img class="img-size bordes img-servicios"  src="img/sanitario.jpg" alt="sanitario">
                 </div>
+
+              <div class="info-3 bordes">
+                  <h4 class="titulos-index-3">Sobre mí</h4>
+                  <p class="textos-index-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus officia ratione odit, facere cum quam voluptatem eos quasi dolore hic molestiae dolor quo doloremque a odio, officiis autem sit culpa.</p>
+              </div>
 
             </section>
 
@@ -89,26 +166,21 @@
         
                 <section>
                     <form action="">
-        
-                        <div class="form">
-                            <span>Nombre</span>
-                            <input class="form-estilo" type="name">
+
+                        <div class="row">
+                          <div class="col">
+                            <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+                          </div>
+                          <div class="col">
+                            <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+                          </div>
                         </div>
-        
-                        <div class="form">
-                            <span>E-mail</span>
-                            <input class="form-estilo" type="email">
-                        </div> 
-        
-                        <div class="form">
-                            <span>Mensaje</span>
-                            <textarea class="form-estilo" name="comentario" id="" cols="30" rows="10"></textarea>
+
+                        <div class="mb-3">
+                          <label for="exampleFormControlTextarea1" class="form-label">Envíame un mensaje</label>
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
                         </div>
-        
-                        <div class="boton">
-                            <input type="submit" value="Enviar">
-                        </div>
-        
+
                     </form>
                 </section>  
 
@@ -116,5 +188,6 @@
 
     </div>
     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
