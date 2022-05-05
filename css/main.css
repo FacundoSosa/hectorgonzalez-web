@@ -1,5 +1,5 @@
 body{
-    background-color: #F8F1F1;
+    background-color: #e3eeff;
     font-family: 'PT Sans', sans-serif;
 
     margin: 0;
@@ -45,10 +45,14 @@ p{
 
 .titulo-portada{
     font-size: 80px;
+    font-style: italic;
     color: #F8F1F1;
     position: absolute;
 
-    text-shadow: -3px -3px black;
+    text-shadow: -3px -3px #000000;
+
+    animation-name: fade in;
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19) ;
 }
 
 section{
@@ -56,8 +60,6 @@ section{
 }
 
 .button{
-    background-color: #16C79A;
-    color: #F8F1F1;
 
     margin: 8px;
     padding: 8px;
@@ -83,56 +85,10 @@ header{
     justify-content: center;
     align-items: center;
 }
-
-.navegador{
-    display: flex;
-    align-items: center;
-}
-
-.navegador-lista{
-    list-style-type: none;
-
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-.navegador-links{
-    text-decoration: none;
-
-    transition: all .3s ease-in-out ;
-
-    margin-right: 5px;
-    margin-left: 5px;
-}
-
  
-
-
-
-.titulos-header{
-
-    background-color: #16C79A;
-    color: #F8F1F1;
-
-    font-size: 20px;
-    font-style: italic;
-
-    margin-bottom: 0px;
-    padding-left: 20px;
-    padding-right: 20px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+.logo-header{
     animation-name: bounce;
     animation-timing-function: ease-in-out;
-
-}
-
-.titulo-principal{
-    transition: all .3s ease-in-out;
 }
 
 
@@ -166,7 +122,7 @@ header{
 }
 
 .info-1{
-    background-color: #0d6efd;
+    background-color: #240dfd;
     color: #F8F1F1;
     
     width: 310px;
@@ -185,6 +141,10 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    animation-name: fade in;
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19) ;
+
 }
 
 .call-to-action-input{
@@ -203,7 +163,6 @@ header{
     
 }
 
-
 .titulos-index-1{
     font-size: 20px;
 }
@@ -219,8 +178,14 @@ header{
 }
 
 
+
+#seccion-2-home{
+    background-color: #d0e3ff;
+}
+
+
 #seccion-3-home{
-    background-color: rgba(0, 0, 0, 0.726);
+    background-color: #000000b9;
     color: #F8F1F1;
     
     display: flex;
@@ -229,20 +194,6 @@ header{
     align-items: center;
     
 }
-
-
- 
-/* .info-3{
-    background-color: #16C79A;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    width: 280px;
-
-}  */
 
 .titulos-index-3{
     font-size: 30px;
@@ -254,45 +205,18 @@ header{
     font-size: 18px;
 
     margin: 10px;
-
 } 
 
 
 
 #servicios{
-    background-color: #19456B;
-    color: #F8F1F1;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    padding-top: 80px;
-    padding-bottom: 80px;
+    background-color: #d0e3ff;
 }
-
-.servicios-tabla{
-    background-color: #11698E;
-    
-}
-
-table{
-    margin-top: 30px;
-    margin-bottom: 30px;
-
-    
-}
-
-td{
-    padding: 0px 5px;
-}
-
 
 
 
 .section-blog{
-    background-color: #19456B;
+    background-color: #013c93;
 
     display: flex;
     flex-direction: column;
@@ -301,7 +225,7 @@ td{
 }
 
 .articulos{
-    background-color: #11698E;
+    background-color: #024cba;
     color: #F8F1F1;
 
     transition: all .3s ease-in-out;
@@ -311,13 +235,13 @@ td{
     justify-content: center;
     align-items: center;
 
-    width: 420px;
+    width: 360px;
     margin: 10px
     
 }
 
 .articulos-img-size{
-    width: 420px;
+    width: 360px;
     min-height: 200px;
 
     border-bottom-left-radius: 0px;
@@ -340,7 +264,7 @@ td{
 
 
 .section-productos{
-    background-color: #19456B;
+    background-color: #013c93;
 
     display: flex;
     flex-direction: column;
@@ -348,7 +272,7 @@ td{
 }
 
 .productos-portadas{
-    background-color: #11698E;
+    background-color: #024cba;
     color: #F8F1F1;
 
     display: flex;
@@ -380,7 +304,7 @@ td{
 
 
 .section-cursos{
-    background-color: #19456B;
+    background-color: #013c93;
 
     margin: 20px;
     padding: 10px;
@@ -390,7 +314,7 @@ td{
 }
 
 .cursos-portada{
-    background-color: #11698E;
+    background-color: #024cba;
 
     transition: all .3s ease-in-out;
 
@@ -411,6 +335,8 @@ td{
 
 .cursos-titulos{
     color: #F8F1F1;
+
+    text-decoration: none;
 
     transition: all .3s ease-in-out;
 
@@ -452,15 +378,15 @@ footer{
     align-items: center;
 }
 
-footer ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
 .textos-footer{
+    list-style-type: none;
+    text-decoration: none;
+    
     font-size: 20px;
     font-weight: lighter;
+
+    margin: 0px;
+    padding: 0px;
 
     color: #F8F1F1;
 
@@ -667,7 +593,7 @@ footer ul{
     }
 
     .cursos-titulos{
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .main{
@@ -683,7 +609,7 @@ footer ul{
 
 
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1270px) {
 
     .img-cursos{
     
@@ -695,7 +621,7 @@ footer ul{
     }
 
     .cursos-titulos{
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .cursos-textos{
@@ -709,7 +635,7 @@ footer ul{
 @media screen and (min-width: 1373px) {
 
     .cursos-titulos{
-        font-size: 50px;
+        font-size: 40px;
     
         margin: 0;
     }
@@ -723,19 +649,6 @@ footer ul{
 
 
 /* hovers */
-
-
-
-.titulo-principal:hover{
-    font-size: 35px;
-}
-
-
-
-.navegador-links:hover{
-    font-size: large ;
-    color: #19456B;
-}
 
 
 
