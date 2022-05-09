@@ -1,0 +1,288 @@
+/* MAIN */
+
+@import "variables";
+
+.main{
+    display: grid;
+    grid-row-gap: 80px;
+}
+
+.img-size{
+    width: 420px;
+    height: 200px;
+}
+
+
+
+#seccion-1-home{
+    background: url(../img/portada-canilla.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-1{
+    background-color: $color-principal;
+    color: $color-terciario;
+    
+    width: 310px;
+    height: 130px;
+
+    margin: 50px;
+    padding: 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-to-action{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    animation-name: fade in;
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19) ;
+
+}
+
+.call-to-action-input{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.img-index{
+    margin-bottom: 50px;
+}
+
+.img-index-icon{
+    width: 64px;
+    height: 56px;
+    
+}
+
+.titulos-index-1{
+    font-size: 20px;
+}
+
+.textos-index{
+    transition: all .3s ease-in-out;
+}
+
+.textos-index-1{
+    font-size: 20px;
+    color: $color-terciario;
+
+        &:hover{
+            color: $color-hovers;
+        }
+}
+
+
+
+#seccion-2-home{
+    background-color: $color-secundario-variable;
+}
+
+
+#seccion-3-home{
+    background-color: #000000b9;
+    color: $color-terciario;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.titulos-index-3{
+    font-size: 30px;
+    margin-bottom: 0%;
+}
+
+.textos-index-3{
+    font-style: italic;
+    font-size: 18px;
+
+    margin: 10px;
+} 
+
+
+
+#servicios{
+    background-color: $color-secundario-variable;
+}
+
+
+.section-blog{
+    background-color: $color-cards-bg;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.articulos{
+    background-color: $color-cards-principal;
+    color: $color-terciario;
+
+    transition: all .3s ease-in-out;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 360px;
+    margin: 10px;
+
+        &:hover{
+            background-color: $color-hovers;
+        }
+       
+}
+
+.articulos-img-size{
+    width: 360px;
+    min-height: 200px;
+
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.articulos-titulo{
+    font-size: 30px;
+
+    margin: 10px;
+}
+
+.articulos-textos{
+    margin: 10px;
+
+    font-style: italic;
+}
+
+
+
+
+.section-productos{
+    background-color: $color-cards-bg;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.productos-portadas{
+    background-color: $color-cards-principal;
+    color: $color-terciario;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 10px;
+
+    transition: all .3s ease-in-out;
+
+        &:hover{
+            background-color: $color-hovers;
+        }
+
+}
+
+.productos-img{
+    height: 220px;
+    width: 220px;
+
+    margin: 10px;
+}
+
+.productos-titulos{
+    margin: 10px;
+}
+
+.productos-textos{
+    margin: 10px;
+}
+
+
+
+.section-cursos{
+    background-color: $color-cards-bg;
+
+    margin: 20px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.cursos-portada{
+    background-color: $color-cards-principal;
+
+    transition: all .3s ease-in-out;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 20px;
+
+        &:hover{
+            background-color: $color-hovers;
+        }
+}
+
+.cursos-texto-y-titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cursos-titulos{
+    color: $color-terciario;
+
+    text-decoration: none;
+
+    transition: all .3s ease-in-out;
+
+    font-size: 22px;
+
+    margin: 0;
+
+        &:hover{
+            text-decoration: none;
+            color: $color-hovers;
+        }
+}
+
+.cursos-textos{
+    color: $color-terciario;
+
+    font-size: 11px;
+
+    margin: 20px;
+}
+
+.img-cursos{
+    
+    width: 280px;
+    height: 100px;
+
+    margin: 10px;
+
+}

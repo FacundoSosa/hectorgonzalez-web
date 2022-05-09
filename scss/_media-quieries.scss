@@ -1,0 +1,232 @@
+/* MEDIA QUIERIES */
+
+@media screen and (min-width: 480px){
+
+    .cursos-titulos{
+        font-size: 25px;
+    }
+    
+    .cursos-textos{
+        font-size: 13px;
+    }
+    
+    .img-cursos{  
+        width: 330px;
+        height: 130px;
+    }
+
+}
+
+
+@media screen and (min-width: 600px) {
+
+    .img-size{
+        width: 580px;
+        height: 290px;
+    }
+
+    .info-1{  
+        width: 420px;
+        height: 200px;
+    }
+
+    .titulos-index-1{
+        font-size: 30px;
+    }
+    
+    .textos-index-1{
+        font-size: 30px;
+    }
+
+    footer{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+}
+
+
+
+
+@media screen and (min-width: 710px) {
+    
+    header{
+        
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    nav{
+        display: flex;
+        align-items: center;
+        
+        margin-right: 20px;
+    }
+
+    .titulos-header{
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }  
+
+
+
+    .section-productos{
+        flex-direction: row;
+    }
+
+}
+
+
+
+@media screen and (min-width: 821px){
+
+    .img-size{
+        width: 840px;
+        height: 400px;
+    }
+
+    .img-index{
+        margin-bottom: 0%;
+    }
+
+    
+
+    #seccion-1-home{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .info-1{
+        padding: 50px;
+    }
+
+
+
+    #seccion-3-home{
+
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+
+        position: relative;
+    }
+
+    .img-3{
+        width: 100%;
+        height: 640px;
+        opacity: 0.4;
+    }
+
+    .titulos-index-3{
+        text-align: center;
+        margin-bottom: 40px;
+        font-weight: 300;
+        font-size: 40px;
+    }
+
+     .info-3{
+        position: absolute;
+        margin-right: 154px;
+        margin-left: 154px;
+
+        font-size: 20px;
+    } 
+
+
+
+    .servicios-tabla{
+    
+        display: grid;
+        grid-template-rows: 100px 100px;
+        grid-template-columns: 400px 400px;
+
+    }
+
+
+
+    .section-blog{
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+
+}
+
+
+
+
+@media screen and (min-width: 1024px) {
+    
+    .servicios-tabla {
+        display: grid;
+        grid-template-columns: 400px 400px 400px;
+        grid-template-rows: 100px 100px 100px;
+    }
+
+
+
+    .cursos-portada{
+    
+        display: flex;
+        flex-direction: row;
+    
+        margin: 20px;
+    }
+
+    .img-cursos{
+        width: 360px;
+        height: 160px;
+    }
+
+    .cursos-titulos{
+        font-size: 28px;
+    }
+
+    .main{
+        margin-right: 130px;
+        margin-left: 130px;
+
+    }
+
+}
+
+
+
+@media screen and (min-width: 1270px) {
+
+    .img-cursos{
+    
+        width: 420px;
+        height: 200px;
+    
+        margin: 10px;
+    
+    }
+
+    .cursos-titulos{
+        font-size: 30px;
+    }
+
+    .cursos-textos{
+        font-size: 15px;
+    }
+    
+}
+
+
+
+@media screen and (min-width: 1373px) {
+
+    .cursos-titulos{
+        font-size: 40px;
+    
+        margin: 0;
+    }
+
+    .cursos-textos{
+        font-size: 17px; 
+    }
+    
+}
