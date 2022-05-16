@@ -20,10 +20,22 @@
     background-size: cover;
     background-position: center center;
 
-    display: flex;
+    @include flex-center;
+
     flex-direction: column-reverse;
-    align-items: center;
-    justify-content: center;
+}
+
+#seccion-2-home{
+    background-color: $color-secundario-variable;
+}
+
+
+#seccion-3-home{
+    background-color: #000000b9;
+    color: $color-terciario;
+    
+    @include flex-column-center;
+    
 }
 
 .info-1{
@@ -36,16 +48,11 @@
     margin: 50px;
     padding: 25px;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex-column-center;
 }
 
 .call-to-action{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include flex-column-center;
 
     animation-name: fade in;
     animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19) ;
@@ -62,15 +69,20 @@
     margin-bottom: 50px;
 }
 
-.img-index-icon{
-    width: 64px;
-    height: 56px;
-    
+
+$titulos-index: (
+    1: 20px,
+    2: 25px,
+    3: 30px
+);
+
+@each $titulo, $fuente in $titulos-index{
+    .titulos-index-#{$titulo}{
+        font-size: $fuente;
+    }
 }
 
-.titulos-index-1{
-    font-size: 20px;
-}
+
 
 .textos-index{
     transition: all .3s ease-in-out;
@@ -85,35 +97,14 @@
         }
 }
 
-
-
-#seccion-2-home{
-    background-color: $color-secundario-variable;
-}
-
-
-#seccion-3-home{
-    background-color: #000000b9;
-    color: $color-terciario;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.titulos-index-3{
-    font-size: 30px;
-    margin-bottom: 0%;
-}
-
 .textos-index-3{
     font-style: italic;
     font-size: 18px;
 
     margin: 10px;
 } 
+
+
 
 
 
@@ -125,31 +116,15 @@
 .section-blog{
     background-color: $color-cards-bg;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex-column-center;
 }
 
 
 .articulos{
-    background-color: $color-cards-principal;
-    color: $color-terciario;
-
-    transition: all .3s ease-in-out;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @extend .productos-portadas;
 
     width: 360px;
-    margin: 10px;
-
-        &:hover{
-            background-color: $color-hovers;
-        }
-       
+    
 }
 
 .articulos-img-size{
@@ -187,10 +162,7 @@
     background-color: $color-cards-principal;
     color: $color-terciario;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex-column-center;
 
     margin: 10px;
 
@@ -230,27 +202,14 @@
 }
 
 .cursos-portada{
-    background-color: $color-cards-principal;
-
-    transition: all .3s ease-in-out;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
     margin: 20px;
 
-        &:hover{
-            background-color: $color-hovers;
-        }
+    @extend .productos-portadas;
+    
 }
 
 .cursos-texto-y-titulo{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex-column-center;
 }
 
 .cursos-titulos{

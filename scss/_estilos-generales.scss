@@ -29,9 +29,7 @@ p{
 }
 
 .img-portada-1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
 
     position: relative;
 
@@ -39,9 +37,7 @@ p{
 }
 
 .img-portada-2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
 }
 
 .titulo-portada{
