@@ -84,14 +84,14 @@ header {
   height: 200px; }
 
 #seccion-1-home {
-  background: url(../img/portada-canilla.png);
+  background: url(../img/canillas/portada-canilla.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  flex-direction: column-reverse; }
+  align-items: center; }
 
 #seccion-2-home {
   background-color: #d0e3ff; }
